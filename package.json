@@ -1,0 +1,20 @@
+{
+  "name": "webpack3-react-antd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icemanZB/webpack3-react-antd.git"
+  },
+  "author": "Iceman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icemanZB/webpack3-react-antd/issues"
+  },
+  "homepage": "https://github.com/icemanZB/webpack3-react-antd#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}

@@ -1,21 +1,29 @@
 {
   "presets": [
-	[
-	  "env", {
-	  "modules": false,
-	  "targets": {
-		"browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
-	  }
-	}
-	],
-	"react",
-	"stage-2"
+    [
+      "env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "> 1%",
+            "last 2 versions",
+            "not ie <= 8"
+          ]
+        }
+      }
+    ],
+    "react",
+    "stage-2"
   ],
   "plugins": [
-	"transform-runtime",
-	["import", {
-	  "libraryName": "antd",
-	  "style": true
-	}]
+    "transform-runtime",
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": true
+      }
+    ]
   ]
 }
