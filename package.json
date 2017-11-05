@@ -14,6 +14,12 @@
     "url": "https://github.com/icemanZB/webpack3-react-antd/issues"
   },
   "homepage": "https://github.com/icemanZB/webpack3-react-antd#readme",
+  "dependencies": {
+    "antd": "^2.13.8",
+    "prop-types": "^15.6.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
   "devDependencies": {
     "webpack": "^3.8.1"
   }
