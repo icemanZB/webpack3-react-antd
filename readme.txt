@@ -14,5 +14,8 @@ es7 async、await http://www.ruanyifeng.com/blog/2015/05/async.html   http://cno
 
 类的修饰器 @test()class A(){} http://es6.ruanyifeng.com/#docs/decorator#%E7%B1%BB%E7%9A%84%E4%BF%AE%E9%A5%B0
 
+webpack3 新特性 http://www.cnblogs.com/libin-1/p/7067820.html
+
+webpack3 https://www.villainhr.com/page/2017/10/27/%E7%9C%8B%E5%95%A5%E5%8F%8C%E6%8B%B1%E9%97%A8%EF%BC%8C%E6%9D%A5%E5%AD%A6%20webpack%203%E5%95%8A
 
 https://reacttraining.com/react-router/web/guides/code-splitting
