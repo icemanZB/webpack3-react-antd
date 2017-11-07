@@ -18,4 +18,14 @@ webpack3 新特性 http://www.cnblogs.com/libin-1/p/7067820.html
 
 webpack3 https://www.villainhr.com/page/2017/10/27/%E7%9C%8B%E5%95%A5%E5%8F%8C%E6%8B%B1%E9%97%A8%EF%BC%8C%E6%9D%A5%E5%AD%A6%20webpack%203%E5%95%8A
 
+babel-preset-env http://2ality.com/2017/02/babel-preset-env.html    https://zhuanlan.zhihu.com/p/29506685   https://segmentfault.com/a/1190000011639765
+
+react 热更新 http://www.cnblogs.com/developerdaily/p/6806217.html
+
+react-router4入门 https://segmentfault.com/a/1190000010174260
+
+
 https://reacttraining.com/react-router/web/guides/code-splitting
+
+
+mac 显示隐藏文件 defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder
