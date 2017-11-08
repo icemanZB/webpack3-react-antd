@@ -29,3 +29,8 @@ https://reacttraining.com/react-router/web/guides/code-splitting
 
 
 mac 显示隐藏文件 defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder
+
+
+antd 兼容问题
+react react-dom 这种公共代码打包的问题
+代码分割问题

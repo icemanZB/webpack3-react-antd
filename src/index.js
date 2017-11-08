@@ -9,7 +9,7 @@ ReactDOM.render(
 	<AppContainer>
 		<BasiceExample/>
 	</AppContainer>,
-	document.getElementById('main')
+	document.getElementById('root')
 );
 
 if(module.hot){
