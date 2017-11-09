@@ -1,5 +1,4 @@
-var path                        = require('path'),
-    merge                       = require('webpack-merge'),
+var merge                       = require('webpack-merge'),
     htmlWebpackPlugin           = require('html-webpack-plugin'),
     friendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin'),
     webpack                     = require('webpack'),
@@ -61,25 +60,7 @@ module.exports = merge(baseWebpackConfig, {
 			filename: 'index.html',
 			template: config.commonPath.src + '/index_build.html',
 			inject  : true
-		})
+		}),
+		new friendlyErrorsWebpackPlugin()
 	]
 });
-
-
-/*
-
-module.exports = {
-
-	plugins: [
-
-		new webpack.HotModuleReplacementPlugin(),
-		// 可以保证出错时页面不阻塞，且会在编译结束后报错。
-		new webpack.NoEmitOnErrorsPlugin(),
-
-		new htmlWebpackPlugin({
-			filename: 'index.html',
-			template: path.resolve(__dirname, '..', 'src') + '/index_build.html',
-			inject  : true
-		})
-	]
-};*/

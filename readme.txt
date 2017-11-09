@@ -23,8 +23,7 @@ babel-preset-env http://2ality.com/2017/02/babel-preset-env.html    https://zhua
 react 热更新 http://www.cnblogs.com/developerdaily/p/6806217.html
 
 react-router4入门 https://segmentfault.com/a/1190000010174260
-
-
+http://www.jianshu.com/p/e3adc9b5f75c
 https://reacttraining.com/react-router/web/guides/code-splitting
 
 

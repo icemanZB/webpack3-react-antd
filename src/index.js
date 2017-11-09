@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
+import {AppContainer} from 'react-hot-loader';
 
-import BasiceExample from './BasiceExample.jsx';
+import App from './App';
 
+const render = Component => {
+	ReactDOM.render(
+		<AppContainer>
+			<Component/>
+		</AppContainer>,
+		document.getElementById('root')
+	);
+};
 
-ReactDOM.render(
-	<AppContainer>
-		<BasiceExample/>
-	</AppContainer>,
-	document.getElementById('root')
-);
+render(App);
 
-if(module.hot){
-	module.hot.accept();
+if (module.hot) {
+	module.hot.accept('./App', () => {
+		const NextRootContainer = require('./App').default;
+		render(NextRootContainer);
+	});
 }
