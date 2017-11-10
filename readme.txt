@@ -25,11 +25,17 @@ react 热更新 http://www.cnblogs.com/developerdaily/p/6806217.html
 react-router4入门 https://segmentfault.com/a/1190000010174260
 http://www.jianshu.com/p/e3adc9b5f75c
 https://reacttraining.com/react-router/web/guides/code-splitting
+http://www.jianshu.com/p/d712a5030c13
+http://blog.csdn.net/sinat_17775997/article/details/77411324
+http://blog.csdn.net/sinat_17775997/article/details/69218382
 
 
 mac 显示隐藏文件 defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder
+
+https://github.com/ShiChenCong 项目源码
 
 
 antd 兼容问题
 react react-dom 这种公共代码打包的问题
 代码分割问题
+react-router版本现今已经到4.0.0了，而上一个稳定版本还是2.8.1
