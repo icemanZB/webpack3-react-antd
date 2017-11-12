@@ -39,3 +39,11 @@ antd 兼容问题
 react react-dom 这种公共代码打包的问题
 代码分割问题
 react-router版本现今已经到4.0.0了，而上一个稳定版本还是2.8.1
+
+
+webpack 是模块打包器。先分析项目依赖，再打包在一起。
+webpack 是通过nodejs来跑的，所以尽量不使用 es6 语法，需要使用 nodejs 语法。
+
+npm install cnpm -g --registry=https://registry.npm.taobao.org  安装配置淘宝镜像
+
+webpack 中 exclude 值可以是个数组，排除多个条件，下面的规则先执行，也就是从后往前执行
