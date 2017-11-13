@@ -1,6 +1,6 @@
 import React from 'react';
 
-const COUNT_STEP = 111;
+const COUNT_STEP = 10;
 
 export default class Counter extends React.Component {
 

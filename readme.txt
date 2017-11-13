@@ -48,6 +48,8 @@ https://stackoverflow.com/questions/34760825/react-route-react-hot-loader-webpac
 react-router版本现今已经到4.0.0了，而上一个稳定版本还是2.8.1
 
 
+bundle-loader https://zhuanlan.zhihu.com/p/24595585?refer=wxyyxc1992   http://www.jianshu.com/p/d712a5030c13
+
 
 webpack 是模块打包器。先分析项目依赖，再打包在一起。
 webpack 是通过nodejs来跑的，所以尽量不使用 es6 语法，需要使用 nodejs 语法。

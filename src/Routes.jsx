@@ -21,7 +21,8 @@ export default class Root extends React.Component {
 
 	render() {
 		// return <Router history={browserHistory} routes={routes}/>
-		return (<Router history={browserHistory}>
+		// key={module.hot && new Date()} 可处理 react-router 爆出的警告
+		return (<Router history={browserHistory} key={module.hot && new Date()}>
 			{routes}
 		</Router>)
 	}

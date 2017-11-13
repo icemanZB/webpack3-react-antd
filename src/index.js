@@ -19,6 +19,8 @@ render(Routes);
 
 // 热更新
 if (module.hot) {
-	// module.hot.accept('./Routes', () => render(Routes));
-	module.hot.accept('./Routes');
+	module.hot.accept('./Routes', () => render(Routes));
+	// 使用这句也可以把 router 警告去掉
+	// Warning: [react-router] You cannot change <Router routes>; it will be ignored
+	// module.hot.accept('./Routes');
 }
