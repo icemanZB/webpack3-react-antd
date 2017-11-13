@@ -20,7 +20,7 @@ webpack3 https://www.villainhr.com/page/2017/10/27/%E7%9C%8B%E5%95%A5%E5%8F%8C%E
 
 babel-preset-env http://2ality.com/2017/02/babel-preset-env.html    https://zhuanlan.zhihu.com/p/29506685   https://segmentfault.com/a/1190000011639765
 
-react 热更新 http://www.cnblogs.com/developerdaily/p/6806217.html
+react 热更新 http://www.cnblogs.com/developerdaily/p/6806217.html  http://www.jianshu.com/p/b7accbae3a1c http://www.jianshu.com/p/533d575af6c4 http://gaearon.github.io/react-hot-loader/getstarted/
 
 react-router4入门 https://segmentfault.com/a/1190000010174260
 http://www.jianshu.com/p/e3adc9b5f75c
@@ -38,7 +38,15 @@ https://github.com/ShiChenCong 项目源码
 antd 兼容问题
 react react-dom 这种公共代码打包的问题
 代码分割问题
+react-hot-loader 官方例子？
+React.createElement: type is invalid :出现这个问题，我也搞了很久，最后把  import { Foot } from './foot.js'  改成了 import Foot from './foot.js' 就解决了
+使用export default时，对应的import语句不需要使用大括号，不使用export default时，对应的import语句需要使用大括号。
+
+browser.js?1af0:49 Warning: [react-router] You cannot change <Router routes>; it will be ignored
+https://stackoverflow.com/questions/34760825/react-route-react-hot-loader-webpack-you-cannot-change-router-routes-it-will
+
 react-router版本现今已经到4.0.0了，而上一个稳定版本还是2.8.1
+
 
 
 webpack 是模块打包器。先分析项目依赖，再打包在一起。
@@ -49,3 +57,12 @@ npm install cnpm -g --registry=https://registry.npm.taobao.org  安装配置淘�
 webpack 中 exclude 值可以是个数组，排除多个条件，下面的规则先执行，也就是从后往前执行
 publicPath : 所有资源的基础路径，一定是 '/' 结尾
 devServer 中的 publicPath： 服务器打包资源后输出路径
+
+
+Source Maps
+
+如果你使用 devtool: 'source-map, source map的产生会隐藏hot reloading code
+
+Source maps会降低你工程的编译速度。使用devtool: 'eval'会获得最好的体验
+
+Hot reloading code只会再每个module里面最开始和最后后面占用一行，所以你可能完全不需要source map

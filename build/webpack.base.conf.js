@@ -34,6 +34,7 @@ module.exports = {
 			{
 				test   : /\.jsx?$/,
 				// cacheDirectory=true 使用 babel 缓存
+				// loader : ['react-hot-loader/webpack','babel-loader?cacheDirectory=true'],
 				loader : 'babel-loader?cacheDirectory=true',
 				exclude: /node_modules/,
 				include: path.join(__dirname, '..', 'src')

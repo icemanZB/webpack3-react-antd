@@ -1,23 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
+import ReactDOM from 'react-dom'
 import {AppContainer} from 'react-hot-loader';
 
-import App from './App';
+import Routes from './Routes';
+
 
 const render = Component => {
 	ReactDOM.render(
 		<AppContainer>
 			<Component/>
 		</AppContainer>,
-		document.getElementById('root')
-	);
+		document.getElementById('root'),
+	)
 };
 
-render(App);
+render(Routes);
 
+// 热更新
 if (module.hot) {
-	module.hot.accept('./App', () => {
-		const NextRootContainer = require('./App').default;
-		render(NextRootContainer);
-	});
+	// module.hot.accept('./Routes', () => render(Routes));
+	module.hot.accept('./Routes');
 }
