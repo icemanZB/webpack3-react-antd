@@ -1,13 +1,14 @@
 import React from 'react';
 import {Router, Route, browserHistory, IndexRoute} from 'react-router';
+import PropTypes from 'prop-types';
 
-import Counter from './Counter';
+import asyncComponent from './AsyncComponent';
 
-const routes = (
-	<Route path="/" component={Counter}>
-		<IndexRoute component={Counter}/>
-	</Route>
-);
+// import Counter from './Counter';
+const Counter = asyncComponent(()=>import(/* webpackChunkName:"Counter" */ "./Counter"));
+import Home from './Home';
+
+/*
 
 export default class Root extends React.Component {
 
@@ -22,16 +23,27 @@ export default class Root extends React.Component {
 	render() {
 		// return <Router history={browserHistory} routes={routes}/>
 		// key={module.hot && new Date()} 可处理 react-router 爆出的警告
-		return (<Router history={browserHistory} key={module.hot && new Date()}>
+		return (<Router history={browserHistory}>
 			{routes}
 		</Router>)
 	}
 };
 
-/*
-const Routes = (
-	<Route path="/" component={Counter}>
-		<IndexRoute component={Counter}/>
-	</Route>
-);
-export default Routes;*/
+*/
+
+// 函数式声明无状态组件(纯函数)
+const Routes = ({history}) =>
+	(
+		<Router history={history}>
+			<Route path="/" component={Home}/>
+			<Route path="/counter" component={Counter}/>
+		</Router>
+
+	);
+
+
+Routes.propTypes = {
+	hsitory: PropTypes.any
+};
+
+export default Routes;

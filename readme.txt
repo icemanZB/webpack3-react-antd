@@ -30,6 +30,9 @@ http://blog.csdn.net/sinat_17775997/article/details/77411324
 http://blog.csdn.net/sinat_17775997/article/details/69218382
 
 
+React中函数式声明组件  https://segmentfault.com/a/1190000006180667
+
+
 mac 显示隐藏文件 defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder
 
 https://github.com/ShiChenCong 项目源码
