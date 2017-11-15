@@ -18,7 +18,6 @@
   ],
   "plugins": [
     "transform-runtime",
-	["react-hot-loader/babel"],
     [
       "import",
       {

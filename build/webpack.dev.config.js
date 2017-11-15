@@ -6,8 +6,8 @@ var merge                       = require('webpack-merge'),
     config                      = require('./config');
 
 module.exports = merge(baseWebpackConfig, {
-	// 入口配置热更新和自动刷新页面
-	entry  : ['react-hot-loader/patch', 'webpack-hot-middleware/client', './src/index.js'],
+	// 入口配置热更新和自动刷新页面  'react-hot-loader/patch',
+	entry  : ['webpack-hot-middleware/client', './src/index.js'],
 	module : {
 		rules: [
 			{
@@ -36,6 +36,26 @@ module.exports = merge(baseWebpackConfig, {
 								return [require('autoprefixer')()];
 							}
 						}
+					}
+				]
+			},
+			{
+				test: /\.less$/,
+				use : [
+					{
+						loader: "style-loader" // creates style nodes from JS strings
+					},
+					{
+						loader: "css-loader" // translates CSS into CommonJS
+					},
+					{
+						loader : 'postcss-loader',
+						options: {
+							plugins: () => [require('autoprefixer')()]
+						}
+					},
+					{
+						loader: "less-loader" // compiles Less to CSS
 					}
 				]
 			}

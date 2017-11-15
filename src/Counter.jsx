@@ -1,5 +1,7 @@
 import React from 'react';
 
+import 'main.less';
+
 const COUNT_STEP = 10;
 
 export default class Counter extends React.Component {
@@ -25,7 +27,7 @@ export default class Counter extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="font">
 				<p> This is a counter: {this.state.value} </p>
 			</div>
 		);
